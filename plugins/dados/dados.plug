@@ -1,9 +1,8 @@
 [Core]
-Name = Example
-Module = example
+Name = dados
+Module = dados
 
 [Documentation]
-Description = This is a simple plugin example to get you started.
-
+Description = Rolar dados para auxílio de jogo RPG de mesa
 [Python]
-Version = 2+
+Version = 3
