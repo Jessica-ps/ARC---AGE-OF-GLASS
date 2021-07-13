@@ -22,9 +22,6 @@ Como referência  teremos a Roma Antiga (uma inspiração, já que o personagem 
 como referência atual temos o filme Maze Runner de 2014
 
 
-
-Chatbot para a disciplina de ARC
-
 # Equipes e repositórios
 
 - [age-of-glass](https://github.com/age-of-glass): [arc](https://github.com/age-of-glass/arc)
