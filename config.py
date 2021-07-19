@@ -5,10 +5,7 @@ import logging
 # the options in the more complete config-template.py from here:
 # https://raw.githubusercontent.com/errbotio/errbot/master/errbot/config-template.py
 
-BACKEND = 'Discord'  # Errbot will start in text mode (console only mode) and will answer commands from there.
-BOT_IDENTITY = {
-    'token': '......'
-}
+BACKEND = 'Text'  # Errbot will start in text mode (console only mode) and will answer commands from there.
 
 BOT_DATA_DIR = r'/workspace/ARC---AGE-OF-GLASS/data'
 BOT_EXTRA_PLUGIN_DIR = r'/workspace/ARC---AGE-OF-GLASS/plugins'
