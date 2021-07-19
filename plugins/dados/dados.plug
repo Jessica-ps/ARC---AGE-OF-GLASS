@@ -1,8 +1,9 @@
 [Core]
-Name = dados
+Name = Dados
 Module = dados
 
 [Documentation]
-Description = Rolar dados para auxílio de jogo RPG de mesa
+Description = Rolar os dados para axuílio em jogos de RPG de mesa
+
 [Python]
 Version = 3
