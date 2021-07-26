@@ -1,6 +1,6 @@
 import logging
 from os import environ
-from dotevn import load_dotenv
+from dotevn import load_dotenvn
 load_dotenv
 
 BACKEND = 'Discord'  
