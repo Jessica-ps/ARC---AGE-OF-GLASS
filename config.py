@@ -1,6 +1,6 @@
 import logging
 from os import environ
-from dotevn import load_dotenvn
+from dotenv import load_dotenv
 load_dotenv
 
 BACKEND = 'Discord'  
@@ -14,7 +14,7 @@ BOT_PREFIX_OPTIONAL_ON_CHAT = True
 
 BOT_DATA_DIR = r'data'
 BOT_EXTRA_PLUGIN_DIR = r'plugins'
-BOT_EXTRA_PLUGIN_DIR = r'Backend'
+BOT_EXTRA_BACKEND_DIR = r'backends'
 
 AUTOINSTALL_DEPS = True
 
