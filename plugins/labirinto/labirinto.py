@@ -23,10 +23,10 @@ class Labirinto(BotPlugin):
     """
 
     mapa_inteiros = [[0, 0, 0, 5, 0],
-                     [0, 9, 9, 5, 0],
-                     [0, 5, 17, 0, 0],
-                     [0, 0, 5, 17, 0],
-                     [0, 0, 0, 5, 17]]
+                     [0, 17, 17, 5, 0],
+                     [0, 5, 9, 0, 0],
+                     [0, 0, 5, 9, 0],
+                     [0, 0, 0, 5, 9]]
 
     def converter_inteiro_para_binario(self, inteiro):
         """
