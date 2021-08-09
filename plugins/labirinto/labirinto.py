@@ -28,6 +28,17 @@ class Labirinto(BotPlugin):
                      [0, 17, 5, 9, 0],
                      [0, 5, 9, 9, 9]]
 
+    """ Posição do final do labirinto. """
+    final = {"x": 3, "y": 4}
+
+    """ Dicionário de mensagens de resposta ao usuário. """
+    mensagens = {
+        "fora do mapa": "Fora dos limites do mapa 🗺️",
+        "parede": "Parede 🧍‍♂️🧱",
+        "fim do labirinto": "Você chegou ao fim do labirinto 🏆",
+        "um passo a frente": "Um passo a frente 🚶🏽"
+    }
+
     def converter_inteiro_para_binario(self, inteiro):
         """
         Converter número inteiro em string de 32 bits.
