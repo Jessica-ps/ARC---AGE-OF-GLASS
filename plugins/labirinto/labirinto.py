@@ -236,12 +236,12 @@ class Labirinto(BotPlugin):
         yield "Posição no mapa: [" + str(linha) + "," + str(coluna) + "]"
         yield "Sentido (ponto cardeal): " + posição
 
-    @re_botcmd(pattern=r"^(.*)direita(.*)$")
-    def direita(self, msg, match):
+        @re_botcmd(pattern=r"^(.*)direita(.*)$")
+     def direita(self, msg, match):
         """ Rotacionar 90 graus o jogador para a direita - na sua perspectiva.  """
 
-       x, y, sentido = self.atualizar_sentido_do_jogador("direita")
-       yield "Novo sentido: " + sentido
+        x, y, sentido = self.atualizar_sentido_do_jogador("direita")
+        yield "Novo sentido: " + sentido
 
     @re_botcmd(pattern=r"^(.*)esquerda(.*)$")
     def esquerda(self, msg, match):
