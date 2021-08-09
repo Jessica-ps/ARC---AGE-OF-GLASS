@@ -2,6 +2,7 @@ from errbot import BotPlugin, re_botcmd
 from random import randint
 
 
+
 class Labirinto(BotPlugin):
     """
      Jogo de labirinto feito em matriz de números inteiros.
@@ -240,7 +241,7 @@ class Labirinto(BotPlugin):
         """ Rotacionar 90 graus o jogador para a direita - na sua perspectiva.  """
 
        x, y, sentido = self.atualizar_sentido_do_jogador("direita")
-        yield "Novo sentido: " + sentido
+       yield "Novo sentido: " + sentido
 
     @re_botcmd(pattern=r"^(.*)esquerda(.*)$")
     def esquerda(self, msg, match):
