@@ -239,7 +239,7 @@ class Labirinto(BotPlugin):
     def direita(self, msg, match):
         """ Rotacionar 90 graus o jogador para a direita - na sua perspectiva.  """
 
-        x, y, sentido = self.atualizar_sentido_do_jogador("direita")
+       x, y, sentido = self.atualizar_sentido_do_jogador("direita")
         yield "Novo sentido: " + sentido
 
     @re_botcmd(pattern=r"^(.*)esquerda(.*)$")
