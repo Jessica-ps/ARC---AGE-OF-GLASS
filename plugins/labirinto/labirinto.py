@@ -18,10 +18,10 @@ class Labirinto(BotPlugin):
       - 16: sentido Leste
     Assim, o mapa acumula informações com base nessas
     potências de dois, como por exemplo:
-    5 = 4 + 1 = jogador no sentido Sul + sala ou corredor    
+    8 = 8 + 0 = jogador no sentido Oeste + sala ou corredor    
     """
 
-    mapa_inteiros = [[1, 1, 1, 9, 1],
+    mapa_inteiros = [[1, 1, 1, 8, 1],
                      [1, 0, 0, 0, 1],
                      [1, 0, 0, 1, 1],
                      [1, 1, 0, 0, 1],
