@@ -9,8 +9,8 @@ class Labirinto(BotPlugin):
     corredores.
     Internamente, o jogo implementa uma matriz de inteiros
     para armazenar informações como:
-    - Parede: 0
-    - Sala ou corredor: 1
+    - Parede: 1
+    - Sala ou corredor: 0
     - Posição e sentido do jogador:
       -  2: sentido Norte
       -  4: sentido Sul
