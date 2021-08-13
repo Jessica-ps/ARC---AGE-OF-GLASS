@@ -267,3 +267,4 @@ class Labirinto(BotPlugin):
 
         mensagem = self.atualizar_posicao_do_jogador("frente")
         yield mensagem
+        
