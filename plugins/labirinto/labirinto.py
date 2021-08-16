@@ -17,6 +17,10 @@ class Labirinto(BotPlugin):
       -  4: sentido Sul
       -  8: sentido Oeste
       - 16: sentido Leste
+    - Jogador está com inventário:
+      - Mapa: 32
+      - Bússola: 64
+    - Final do labirinto: 128
     Assim, o mapa acumula informações com base nessas
     potências de dois, como por exemplo:
     5 = 4 + 1 = jogador no sentido Sul + sala ou corredor.
@@ -26,10 +30,15 @@ class Labirinto(BotPlugin):
                      [0, 17, 17, 5, 0],
                      [0, 17, 9, 0, 0],
                      [0, 17, 5, 9, 0],
-                     [0, 5, 9, 9, 9]]
+                     [0, 5, 9, 9, 129]]
 
-    """ Posição do final do labirinto. """
-    final = {"x": 3, "y": 4}
+    """ Dicionário de mensagens de resposta ao usuário. """
+    mensagens = {
+        "fora do mapa": "Fora dos limites do mapa 🗺️",
+        "parede": "Parede 🧍‍♂️🧱",
+        "fim do labirinto": "Fim do labirinto 🏆",
+        "um passo a frente": "Um passo a frente 🚶🏽"
+    }
 
     """ Dicionário de mensagens de resposta ao usuário. """
     mensagens = {
