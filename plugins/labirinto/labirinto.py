@@ -54,7 +54,7 @@ class Labirinto(BotPlugin):
     mensagens = {
         "fora do mapa": "Fora dos limites do mapa 🗺️",
         "parede": "Parede 🧍‍♂️🧱",
-        "fim do labirinto": "Fim do labirinto 🏆",
+        "fim do labirinto": "Fim do labirinto, PARABÉNS 🏆",
         "um passo a frente": "Um passo a frente 🚶🏽"
     }
 
@@ -239,7 +239,7 @@ class Labirinto(BotPlugin):
                     partida[x-1][y] += 2 + inventário
                     self.partida(jogador, atualizar=partida)
                     if self.converter_inteiro_para_binario(partida[x-1][y])[24] == "1":
-                        return self.mensagens["fim do labirinto"]
+                        return self.mensagens["fim do labirinto, PARABÉNS"]
                     else:
                         return self.mensagens["um passo a frente"]
                 else:
@@ -257,7 +257,7 @@ class Labirinto(BotPlugin):
                     partida[x+1][y] += 4 + inventário
                     self.partida(jogador, atualizar=partida)
                     if self.converter_inteiro_para_binario(partida[x+1][y])[24] == "1":
-                        return self.mensagens["fim do labirinto"]
+                        return self.mensagens["fim do labirinto, PARABÉNS"]
                     else:
                         return self.mensagens["um passo a frente"]
                 else:
@@ -275,7 +275,7 @@ class Labirinto(BotPlugin):
                     partida[x][y-1] += 8 + inventário
                     self.partida(jogador, atualizar=partida)
                     if self.converter_inteiro_para_binario(partida[x][y-1])[24] == "1":
-                        return self.mensagens["fim do labirinto"]
+                        return self.mensagens["fim do labirinto, PARABÉNS"]
                     else:
                         return self.mensagens["um passo a frente"]
                 else:
@@ -293,7 +293,7 @@ class Labirinto(BotPlugin):
                     partida[x][y+1] += 16 + inventário
                     self.partida(jogador, atualizar=partida)
                     if self.converter_inteiro_para_binario(partida[x][y+1])[24] == "1":
-                        return self.mensagens["fim do labirinto"]
+                        return self.mensagens["fim do labirinto, PARABÉNS"]
                     else:
                         return self.mensagens["um passo a frente"]
                 else:
